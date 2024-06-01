@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="addClientWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="addEmployeeForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="addRegistration.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="adimAuthPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="adminMainPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="authPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="couchProfilePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="employeesPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="mainPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="usersPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="addClientWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="addEmployeeForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="addRegistration.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="adimAuthPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="adminMainPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="authPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="couchProfilePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="employeesPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="mainPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="usersPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

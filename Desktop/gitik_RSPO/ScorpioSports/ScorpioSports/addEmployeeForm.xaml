@@ -1,0 +1,54 @@
+﻿<Window x:Class="ScorpioSports.addEmployeeForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScorpioSports"
+        mc:Ignorable="d"
+        Title="addEmployeeForm" Height="700" Width="500">
+    <Grid>
+        <Grid Margin="25">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <!---->
+            <TextBlock Grid.Row="0" Grid.Column="0" FontSize="20" FontWeight="DemiBold" VerticalAlignment="Center" Margin="0,0,10,0">ИМЯ:</TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="0" FontSize="20" FontWeight="DemiBold" VerticalAlignment="Center" Margin="0,0,10,0">ФАМИЛИЯ:</TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="0" FontSize="20" FontWeight="DemiBold" VerticalAlignment="Center" Margin="0,0,10,0">ДОЛЖНОСТЬ:</TextBlock>
+            <TextBlock Grid.Row="3" Grid.Column="0" FontSize="20" FontWeight="DemiBold" VerticalAlignment="Center" Margin="0,0,10,0">НОМЕР ТЕЛЕФОНА:</TextBlock>
+            <TextBlock Grid.Row="4" Grid.Column="0" FontSize="20" FontWeight="DemiBold" VerticalAlignment="Center" Margin="0,0,10,0">ДАТА ПОСТУПЛЕНИЯ:</TextBlock>
+            <TextBlock Grid.Row="5" Grid.Column="0" FontSize="20" FontWeight="DemiBold" VerticalAlignment="Center" Margin="0,0,10,0">ЗАРПЛАТА:</TextBlock>
+            <TextBlock Grid.Row="6" Grid.Column="0" FontSize="20" FontWeight="DemiBold" VerticalAlignment="Center" Margin="0,0,10,0">ЛОГИН:</TextBlock>
+            <TextBlock Grid.Row="7" Grid.Column="0" FontSize="20" FontWeight="DemiBold" VerticalAlignment="Center" Margin="0,0,10,0">ПАРОЛЬ:</TextBlock>
+            
+            <TextBox Grid.Column="1" Grid.Row="0" FontSize="20" FontWeight="Regular" Margin="0,10" Background="#eeeeee" x:Name="nameTB"/>
+            <TextBox Grid.Column="1" Grid.Row="1" FontSize="20" FontWeight="Regular" Margin="0,10" Background="#eeeeee" x:Name="surnameTB"/>
+            <ComboBox Grid.Column="1" Grid.Row="2" FontSize="20" FontWeight="Regular" Margin="0,10" Background="#eeeeee" x:Name="postCB" SelectedIndex="0">
+                <ComboBoxItem Content="Администратор"/>
+                <ComboBoxItem Content="Тренер"/>
+            </ComboBox>
+            <TextBox Grid.Column="1" Grid.Row="3" FontSize="20" FontWeight="Regular" Margin="0,10" Background="#eeeeee" x:Name="phoneNumberTB"/>
+            <DatePicker VerticalAlignment="Center" FontSize="20" Margin="0,5" Grid.Row="4" Grid.Column="1" x:Name="dateSelector" />
+            <TextBox Grid.Column="1" Grid.Row="5" FontSize="20" FontWeight="Regular" Margin="0,10" Background="#eeeeee" x:Name="salaryTB"/>
+            <TextBox Grid.Column="1" Grid.Row="6" FontSize="20" FontWeight="Regular" Margin="0,10" Background="#eeeeee" x:Name="loginTB"/>
+            <TextBox Grid.Column="1" Grid.Row="7" FontSize="20" FontWeight="Regular" Margin="0,10" Background="#eeeeee" x:Name="passwordTB"/>
+
+            <!--
+            <TextBox Grid.Column="1" Grid.Row="3" FontSize="20" FontWeight="Regular" Margin="0,20" Background="#eeeeee" x:Name="emailTB"/>
+            -->
+            <Button Grid.Column="1" Grid.Row="8" Margin="15" FontWeight="DemiBold" FontSize="20" Click="confirmButton_click">ДОБАВИТЬ</Button>
+        </Grid>
+    </Grid>
+</Window>

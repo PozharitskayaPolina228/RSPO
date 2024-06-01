@@ -1,0 +1,37 @@
+﻿<Window x:Class="ScorpioSports.addClientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScorpioSports"
+        mc:Ignorable="d"
+        Title="addClientWindow" Height="500" Width="500">
+    <Grid Margin="25">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <!---->
+        <TextBlock Grid.Row="0" Grid.Column="0" FontSize="20" FontWeight="DemiBold" VerticalAlignment="Center" Margin="0,0,10,0">ИМЯ:</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="0" FontSize="20" FontWeight="DemiBold" VerticalAlignment="Center" Margin="0,0,10,0">ФАМИЛИЯ:</TextBlock>
+        <TextBlock Grid.Row="2" Grid.Column="0" FontSize="20" FontWeight="DemiBold" VerticalAlignment="Center" Margin="0,0,10,0">ДАТА РОЖДЕНИЯ:</TextBlock>
+        <TextBlock Grid.Row="3" Grid.Column="0" FontSize="20" FontWeight="DemiBold" VerticalAlignment="Center" Margin="0,0,10,0">ЭЛ. ПОЧТА:</TextBlock>
+        <TextBlock Grid.Row="4" Grid.Column="0" FontSize="20" FontWeight="DemiBold" VerticalAlignment="Center" Margin="0,0,10,0">НОМЕР ТЕЛЕФОНА:</TextBlock>
+        <!---->
+        <TextBox Grid.Column="1" Grid.Row="0" FontSize="20" FontWeight="Regular" Margin="0,20" Background="#eeeeee" x:Name="nameTB"/>
+        <TextBox Grid.Column="1" Grid.Row="1" FontSize="20" FontWeight="Regular" Margin="0,20" Background="#eeeeee" x:Name="surnameTB"/>
+        <TextBox Grid.Column="1" Grid.Row="3" FontSize="20" FontWeight="Regular" Margin="0,20" Background="#eeeeee" x:Name="emailTB"/>
+        <TextBox Grid.Column="1" Grid.Row="4" FontSize="20" FontWeight="Regular" Margin="0,20" Background="#eeeeee" x:Name="phoneNumberTB"/>
+        <DatePicker VerticalAlignment="Center" FontSize="20" Margin="0,10" Grid.Row="2" Grid.Column="1" x:Name="dateSelector" />
+        <!---->
+        <Button Grid.Column="1" Grid.Row="5" Margin="15" FontWeight="DemiBold" FontSize="20" Click="confirmButton_click">ДОБАВИТЬ</Button>
+    </Grid>
+</Window>
